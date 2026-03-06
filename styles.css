@@ -1,0 +1,299 @@
+
+.hidden {
+  display: none;
+}
+/* --- Theme + base --- */
+:root {
+  --bg0: #140101;
+  --bg1: #1b0404;
+  --panel: #241010;
+  --panel2: #2b1212;
+  --border: #5b2a2a;
+  --borderSoft: #3e1a1a;
+  --text: #ffecec;
+  --muted: rgba(255, 236, 236, 0.72);
+  --muted2: rgba(255, 236, 236, 0.55);
+
+  --gold: #d6b25e;
+  --red: #b21f2d;
+
+  --ok: #2ecc71;
+  --bad: #e74c3c;
+
+  --shadow: 0 12px 40px rgba(0, 0, 0, 0.35);
+  --shadowSoft: 0 8px 20px rgba(0, 0, 0, 0.25);
+  --radius: 16px;
+}
+
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family:
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    Segoe UI,
+    Roboto,
+    Arial,
+    "Noto Sans",
+    "Helvetica Neue",
+    sans-serif;
+  margin: 0;
+  color: var(--text);
+
+  /* Seamless layered background */
+  background:
+    radial-gradient(
+      1200px 800px at 12% 0%,
+      rgba(214, 178, 94, 0.14),
+      transparent 60%
+    ),
+    radial-gradient(
+      900px 700px at 100% 18%,
+      rgba(178, 31, 45, 0.18),
+      transparent 62%
+    ),
+    radial-gradient(
+      1000px 900px at 50% 110%,
+      rgba(255, 236, 236, 0.05),
+      transparent 65%
+    ),
+    linear-gradient(180deg, var(--bg0), var(--bg1));
+  background-attachment: fixed;
+}
+
+/* optional subtle grain to hide any remaining banding */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.1;
+  background-image: repeating-linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0.03),
+    rgba(255, 255, 255, 0.03) 1px,
+    transparent 1px,
+    transparent 3px
+  );
+  mix-blend-mode: overlay;
+}
+
+/* --- Layout --- */
+.wrap {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 28px 18px 54px;
+}
+
+h1 {
+  margin: 10px 0 6px;
+  font-size: clamp(26px, 4vw, 38px);
+  letter-spacing: 0.2px;
+}
+
+h2 {
+  font-size: 18px;
+  letter-spacing: 0.2px;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin: 8px 0 16px;
+}
+
+/* --- Panels/cards --- */
+.panel {
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255, 236, 236, 0.05),
+      rgba(255, 236, 236, 0.02)
+    ),
+    linear-gradient(180deg, var(--panel), var(--panel2));
+  border: 1px solid var(--borderSoft);
+  border-radius: var(--radius);
+  padding: 16px;
+  margin: 14px 0;
+  box-shadow: var(--shadowSoft);
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease,
+    border-color 0.15s ease;
+}
+
+.panel:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow);
+  border-color: rgba(214, 178, 94, 0.35);
+}
+
+.q {
+  font-size: 16px;
+  font-weight: 800;
+  margin: 2px 0 12px;
+  line-height: 1.25;
+}
+
+.hint {
+  opacity: 1;
+  color: var(--muted);
+  font-size: 13px;
+  margin-top: 8px;
+  line-height: 1.35;
+}
+
+/* --- Rows --- */
+.row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+/* --- Inputs & buttons --- */
+input,
+button {
+  border-radius: 14px;
+  border: 1px solid var(--borderSoft);
+  background: rgba(20, 6, 6, 0.55);
+  color: var(--text);
+  padding: 12px 12px;
+  transition:
+    border-color 0.15s ease,
+    box-shadow 0.15s ease,
+    transform 0.06s ease,
+    background 0.15s ease;
+}
+
+input {
+  outline: none;
+}
+
+input::placeholder {
+  color: rgba(255, 236, 236, 0.45);
+}
+
+input:focus {
+  border-color: rgba(214, 178, 94, 0.65);
+  box-shadow: 0 0 0 4px rgba(214, 178, 94, 0.18);
+}
+
+.ansInput {
+  flex: 1;
+  min-width: 240px;
+}
+
+button {
+  cursor: pointer;
+  font-weight: 800;
+  letter-spacing: 0.2px;
+  user-select: none;
+}
+
+button:active {
+  transform: translateY(1px);
+}
+
+/* primary button look */
+button {
+  background: linear-gradient(
+    180deg,
+    rgba(214, 178, 94, 0.18),
+    rgba(214, 178, 94, 0.06)
+  );
+  border-color: rgba(214, 178, 94, 0.35);
+}
+
+button:hover {
+  border-color: rgba(214, 178, 94, 0.65);
+  box-shadow: 0 0 0 4px rgba(214, 178, 94, 0.12);
+}
+
+/* secondary small button */
+.smallBtn {
+  background: rgba(255, 236, 236, 0.06);
+  border-color: var(--borderSoft);
+  font-weight: 700;
+}
+
+.smallBtn:hover {
+  border-color: rgba(255, 236, 236, 0.22);
+  box-shadow: 0 0 0 4px rgba(255, 236, 236, 0.08);
+}
+
+/* --- Badges/pills --- */
+.pill {
+  padding: 7px 11px;
+  border: 1px solid rgba(214, 178, 94, 0.35);
+  border-radius: 999px;
+  font-size: 12px;
+  color: rgba(255, 236, 236, 0.9);
+  background: rgba(214, 178, 94, 0.08);
+}
+
+/* --- Status + reveal --- */
+.status {
+  margin-top: 10px;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.reveal {
+  margin-top: 10px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px dashed rgba(255, 236, 236, 0.22);
+  background: rgba(255, 236, 236, 0.05);
+  font-size: 13px;
+  color: rgba(255, 236, 236, 0.92);
+  display: none;
+}
+
+/* --- Correct / wrong states (improved) --- */
+.correct {
+  border-color: rgba(46, 204, 113, 0.95) !important;
+  box-shadow: 0 0 0 4px rgba(46, 204, 113, 0.18) !important;
+  background: rgba(46, 204, 113, 0.06) !important;
+}
+
+.wrong {
+  border-color: rgba(231, 76, 60, 0.95) !important;
+  box-shadow: 0 0 0 4px rgba(231, 76, 60, 0.16) !important;
+  background: rgba(231, 76, 60, 0.06) !important;
+}
+
+/* --- Gate section polish --- */
+#gate {
+  padding: 14px 0;
+}
+
+#gate .row {
+  margin-top: 10px;
+}
+
+/* --- Mobile tweaks --- */
+@media (max-width: 520px) {
+  .wrap {
+    padding: 22px 14px 44px;
+  }
+  .panel {
+    padding: 14px;
+  }
+  button,
+  input {
+    width: 100%;
+  }
+  .topbar {
+    align-items: flex-start;
+  }
+}
