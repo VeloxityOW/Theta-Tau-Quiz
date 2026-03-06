@@ -14,9 +14,9 @@ Users unlock the page with a single password (no accounts), then answer question
 ---
 
 ## Project Structure
-  ├── index.html
-  ├── styles.css
-  └── app.js
+├── index.html
+├── styles.css
+└── app.js
 
 
 ## Future Ideas
