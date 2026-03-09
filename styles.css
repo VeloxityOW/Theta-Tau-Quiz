@@ -316,6 +316,8 @@ button:hover {
   }
 }
 
+#app { padding-top: 8px; }
+
 /* --- Mobile tweaks --- */
 @media (max-width: 520px) {
   .wrap {
@@ -332,6 +334,7 @@ button:hover {
     align-items: flex-start;
   }
 }
+
 
 
 
