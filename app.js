@@ -408,10 +408,6 @@ document.getElementById("unlock").addEventListener("click", () => {
     elGate.classList.add("hidden");
     elApp.classList.remove("hidden");
     render(questions);
-
-    // jump to the quiz immediately
-    window.scrollTo({ top: 0, behavior: "instant" });
-    // or: elApp.scrollIntoView({ behavior: "smooth", block: "start" });
   } else {
     elMsg.textContent = "Wrong password.";
   }
@@ -426,4 +422,3 @@ elSearch.addEventListener("input", () => render(filtered()));
 document.getElementById("reload").addEventListener("click", () => {
   window.location.reload();
 });
-
