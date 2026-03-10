@@ -37,82 +37,32 @@ const questions = [
   { id: "1PNM", q: "1st PNM:", a: "Sultan Almotiri", mode: "contains" },
   { id: "2PNM", q: "2nd PNM:", a: "Ishaan Anand", mode: "contains" },
   { id: "3PNM", q: "3rd PNM:", a: "Zane Anthony Cortes", mode: "contains" },
-  {
-    id: "4PNM",
-    q: "4th PNM:",
-    a: "Bhanu Rishith Reddy Kesavareddy Gari",
-    mode: "contains",
-  },
+  { id: "4PNM", q: "4th PNM:", a: "Bhanu Rishith Reddy Kesavareddy Gari", mode: "contains" },
   { id: "5PNM", q: "5th PNM:", a: "Helena Eyob Gezahegn", mode: "contains" },
   { id: "6PNM", q: "6th PNM:", a: "Camila Gonzalez", mode: "contains" },
-  {
-    id: "7PNM",
-    q: "7th PNM:",
-    a: "Prabal Giridhar Malavalli",
-    mode: "contains",
-  },
+  { id: "7PNM", q: "7th PNM:", a: "Prabal Giridhar Malavalli", mode: "contains" },
   { id: "8PNM", q: "8th PNM:", a: "Kyla Corrine Martinez", mode: "contains" },
   { id: "9PNM", q: "9th PNM:", a: "Taylor Nicole Malone", mode: "contains" },
   { id: "10PNM", q: "10th PNM:", a: "Luke Michael Montoya", mode: "contains" },
   { id: "11PNM", q: "11th PNM:", a: "Kavya Mishra", mode: "contains" },
   { id: "12PNM", q: "12th PNM:", a: "Alp Ethem Ocal", mode: "contains" },
-  {
-    id: "13PNM",
-    q: "13th PNM:",
-    a: "Jennifer Lee Perez Castaneda",
-    mode: "contains",
-  },
+  { id: "13PNM", q: "13th PNM:", a: "Jennifer Lee Perez Castaneda", mode: "contains" },
   { id: "14PNM", q: "14th PNM:", a: "Rachel Quan", mode: "contains" },
   { id: "15PNM", q: "15th PNM:", a: "Lucas Orlando Sanchez", mode: "contains" },
-  {
-    id: "16PNM",
-    q: "16th PNM:",
-    a: "Kaushik Chandar Venkatesh",
-    mode: "contains",
-  },
+  { id: "16PNM", q: "16th PNM:", a: "Kaushik Chandar Venkatesh", mode: "contains" },
   // Flower
-  {
-    id: "Flower",
-    q: "Official Flower of Theta Tau:",
-    a: "Jacqueminot",
-    mode: "contains",
-  },
+  { id: "Flower", q: "Official Flower of Theta Tau:", a: "Jacqueminot", mode: "contains" },
   // Gem
-  {
-    id: "Gem",
-    q: "Official Gem of Theta Tau:",
-    a: "Dark Red Garnet",
-    mode: "contains",
-  },
+  { id: "Gem", q: "Official Gem of Theta Tau:", a: "Dark Red Garnet", mode: "contains" },
   // Official Color
-  {
-    id: "Colors",
-    q: "Official colors of Theta Tau: (Color, Color)",
-    a: "Dark Red, Gold",
-    mode: "contains",
-  },
+  { id: "Colors", q: "Official colors of Theta Tau: (Color, Color)", a: "Dark Red, Gold", mode: "contains" },
   // University Questions
-  {
-    id: "Uni",
-    q: "Founding University:",
-    a: "University of Minnesota",
-    mode: "contains",
-  },
+  { id: "Uni", q: "Founding University:", a: "University of Minnesota", mode: "contains" },
   { id: "City", q: "Founding City:", a: "Minneapolis", mode: "contains" },
   { id: "State", q: "Founding State:", a: "Minnesota", mode: "contains" },
-  {
-    id: "Date",
-    q: "Founding Date: (Month Day, Year)",
-    a: "October 15th, 1904",
-    mode: "contains",
-  },
+  { id: "Date", q: "Founding Date: (Month Day, Year)", a: "October 15th, 1904", mode: "contains" },
   // OG Name
-  {
-    id: "OGName",
-    q: "Original name of Theta Tau:",
-    a: "Society of Hammer and Tongs",
-    mode: "exact",
-  },
+  { id: "OGName", q: "Original name of Theta Tau:", a: "Society of Hammer and Tongs", mode: "exact" },
   // Founder Questions
   {
     id: "Founders",
@@ -120,12 +70,7 @@ const questions = [
     a: "Isaac Baker Hanks, William Murray Lewis, Erich Julius Schrader, Elwin Leroy Vinal",
     mode: "contains",
   },
-  {
-    id: "DeadOrAlive",
-    q: "Are they Alive? (yes/no)",
-    a: "No",
-    mode: "contains",
-  },
+  { id: "DeadOrAlive", q: "Are they Alive? (yes/no)", a: "No", mode: "contains" },
   // Hand + Sleeve
   {
     id: "CoatOfArms1",
@@ -422,3 +367,4 @@ elSearch.addEventListener("input", () => render(filtered()));
 document.getElementById("reload").addEventListener("click", () => {
   window.location.reload();
 });
+
