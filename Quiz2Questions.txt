@@ -1,0 +1,171 @@
+  // Flower
+  { id: "Flower", q: "Official Flower of Theta Tau:", a: "Jacqueminot", mode: "contains" },
+  // Gem
+  { id: "Gem", q: "Official Gem of Theta Tau:", a: "Dark Red Garnet", mode: "contains" },
+  // Official Color
+  { id: "Colors", q: "Official colors of Theta Tau: (Color, Color)", a: "Dark Red, Gold", mode: "contains" },
+  // University Questions
+  { id: "Uni", q: "Founding University:", a: "University of Minnesota", mode: "contains" },
+  { id: "City", q: "Founding City:", a: "Minneapolis", mode: "contains" },
+  { id: "State", q: "Founding State:", a: "Minnesota", mode: "contains" },
+  { id: "Date", q: "Founding Date: (Month Day, Year)", a: "October 15th, 1904", mode: "contains" },
+  // OG Name
+  { id: "OGName", q: "Original name of Theta Tau:", a: "Society of Hammer and Tongs", mode: "exact" },
+  // Founder Questions
+  {
+    id: "Founders",
+    q: "Original founders: (Name, Name, etc.)",
+    a: "Isaac Baker Hanks, William Murray Lewis, Erich Julius Schrader, Elwin Leroy Vinal",
+    mode: "contains",
+  },
+  { id: "DeadOrAlive", q: "Are they Alive? (yes/no)", a: "No", mode: "contains" },
+  // Hand + Sleeve
+  {
+    id: "CoatOfArms1",
+    q: "What are the 2 objects at the top? (x, y)",
+    a: "hammer, tongs",
+    mode: "contains",
+  },
+  {
+    id: "CoatOfArms2",
+    q: "What is clasping these objects?",
+    a: "hands",
+    mode: "contains",
+  },
+  {
+    id: "CoatOfArms3",
+    q: "What object is on the left?",
+    a: "tongs",
+    mode: "contains",
+  },
+  {
+    id: "CoatOfArms4",
+    q: "What object is on the right?",
+    a: "hammer",
+    mode: "contains",
+  },
+  {
+    id: "CoatOfArms5",
+    q: "Whats under the thing clasping these objects?",
+    a: "sleeve",
+    mode: "contains",
+  },
+  // Torsade
+  {
+    id: "CoatOfArms6",
+    q: "Where is the torsade under?",
+    a: "sleeve",
+    mode: "contains",
+  },
+  {
+    id: "CoatOfArms7",
+    q: "How many stripes are in the torsade? (number)",
+    a: "11",
+    mode: "contains",
+  },
+  {
+    id: "CoatOfArms8",
+    q: "What colors are alternating in the torsade? (x, y)",
+    a: "Dark red, Gold",
+    mode: "contains",
+  },
+  // Gears
+  {
+    id: "CoatOfArms9",
+    q: "What objects are on top half of the shield?",
+    a: "gears",
+    mode: "contains",
+  },
+  {
+    id: "CoatOfArms10",
+    q: "How many teeth do they have? (number)",
+    a: "26",
+    mode: "contains",
+  },
+  {
+    id: "CoatOfArms11",
+    q: "How many spokes do they have? (number)",
+    a: "4",
+    mode: "contains",
+  },
+  {
+    id: "CoatOfArms12",
+    q: "Is there a circle in the middle of this object? (yes/no)",
+    a: "yes",
+    mode: "contains",
+  },
+  // Bridge
+  {
+    id: "CoatOfArms13",
+    q: "What object is on the bottom half of the shield?",
+    a: "bridge",
+    mode: "contains",
+  },
+  {
+    id: "CoatOfArms14",
+    q: "How many arches does this object have? (number)",
+    a: "3",
+    mode: "contains",
+  },
+  {
+    id: "CoatOfArms15",
+    q: "How many bricks does this object have? (number +/- number)",
+    a: "151 +/- 1",
+    mode: "contains",
+  },
+  {
+    id: "CoatOfArms16",
+    q: "What color is this object?",
+    a: "grey | gray | light gray | light grey",
+    mode: "multi",
+  },
+  {
+    id: "CoatOfArms17",
+    q: "How many ripples? (number +/- number)",
+    a: "33 +/- 1",
+    mode: "contains",
+  },
+  // Shield
+  {
+    id: "CoatOfArms18",
+    q: "What color is the top half background of the shield?",
+    a: "Red",
+    mode: "contains",
+  },
+  {
+    id: "CoatOfArms19",
+    q: "What color is the bottom half background of the shield?",
+    a: "Gold",
+    mode: "contains",
+  },
+  // Ribbon
+  {
+    id: "CoatOfArms20",
+    q: "What object is under the shield?",
+    a: "Ribbon",
+    mode: "contains",
+  },
+  {
+    id: "CoatOfArms21",
+    q: "What color is this objects background?",
+    a: "Gold",
+    mode: "contains",
+  },
+  {
+    id: "CoatOfArms22",
+    q: "How many folds does this object have? (number)",
+    a: "3",
+    mode: "contains",
+  },
+  {
+    id: "CoatOfArms23",
+    q: "What letters are written on it?",
+    a: "Theta.Tau.",
+    mode: "Exact",
+  },
+  {
+    id: "CoatOfArms24",
+    q: "What color are these letters",
+    a: "black",
+    mode: "contains",
+  },
