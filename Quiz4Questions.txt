@@ -1,0 +1,118 @@
+  //Flag
+  {
+    id: "Flag1",
+    q: "What Color is on the top left and bottom right corner?",
+    a: "Dark Red",
+    mode: "contains",
+  },
+  {
+    id: "Flag2",
+    q: "What color is on the top right and bottom left corner?",
+    a: "Gold",
+    mode: "contains",
+  },
+  {
+    id: "Flag3",
+    q: "What's on the top left corner?",
+    a: "Coat of Arms",
+    mode: "contains",
+  },
+  {
+    id: "Flag4",
+    q: "What's on the bottom right corner?",
+    a: "Theta Tau",
+    mode: "contains",
+  },
+  {
+    id: "Flag5",
+    q: "What color is the object on the bottom right corner?",
+    a: "Gold",
+    mode: "contains",
+  },
+//Regions of Theta Tau
+  {
+    id: "Regions",
+    q: "Name all 10 Regions (region, region, etc.)",
+    a: "Atlantic, Central, Great Lakes, Gulf, Midwest, Mid-Atlantic, Northeast, Northwest, Southeast, Southwest",
+    mode: "contains",
+  },
+//Southwest regional directors
+  {
+    id: "RD",
+    q: "Who are the regional directors? (Name, Name)",
+    a: "Jasdeep Shangari, Saul Manzano",
+    mode: "contains",
+  },
+//Chapters in Southwest Region
+  {
+    id: "Chapters1",
+    q: "1st Chapter in SW Region: (alphabet, university, city if applicable)",
+    a: "Chi, Univeristy of Arizona",
+    mode: "exact",
+  },
+  {
+    id: "Chapters2",
+    q: "2nd Chapter in SW Region: (alphabet, university, city if applicable)",
+    a: "Delta Gamma, Arizona State University",
+    mode: "exact",
+  },
+  {
+    id: "Chapters3",
+    q: "3rd Chapter in SW Region: (alphabet, university, city if applicable)",
+    a: "Epsilon Delta, University of California, San Diego",
+    mode: "exact",
+  },
+  {
+    id: "Chapters4",
+    q: "4th Chapter in SW Region: (alphabet, university, city if applicable)",
+    a: "Pi Delta, University of California, Irvine",
+    mode: "exact",
+  },
+  {
+    id: "Chapters5",
+    q: "5th Chapter in SW Region: (alphabet, university, city if applicable)",
+    a: "Sigma Delta, University of California, Riverside",
+    mode: "exact",
+  },
+  {
+    id: "Chapters6",
+    q: "6th Chapter in SW Region: (alphabet, university, city if applicable)",
+    a: "Upsilon Delta, University of California, Los Angeles",
+    mode: "exact",
+  },
+  {
+    id: "Chapters7",
+    q: "7th Chapter in SW Region: (alphabet, university, city if applicable)",
+    a: "Kappa Epsilon, University of Southern California",
+    mode: "exact",
+  },
+  {
+    id: "Chapters8",
+    q: "8th Chapter in SW Region: (alphabet, university, city if applicable)",
+    a: "Xi Epsilon, California State University, Long Beach",
+    mode: "exact",
+  },
+  {
+    id: "Chapters9",
+    q: "9th Chapter in SW Region: (alphabet, university, city if applicable)",
+    a: "Omicron Epsilon, Northern Arizona University",
+    mode: "exact",
+  },
+  {
+    id: "Chapters10",
+    q: "10th Chapter in SW Region: (alphabet, university, city if applicable)",
+    a: "Sigma Epsilon, University of California, Santa Barbara",
+    mode: "exact",
+  },
+  {
+    id: "Chapters11",
+    q: "11th Chapter in SW Region: (alphabet, university, city if applicable)",
+    a: "Phi Epsilon, California State University, Fullerton",
+    mode: "exact",
+  },
+  {
+    id: "Chapters12",
+    q: "12th Chapter in SW Region: (alphabet, university, city if applicable)",
+    a: "Iota Zeta, California Polytechnic State University",
+    mode: "exact",
+  },
