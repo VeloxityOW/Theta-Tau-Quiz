@@ -285,7 +285,7 @@ const questions = [
   {
     id: "ChapterExecutiveCouncil11",
     q: "Who's the Regent Emiritus?",
-    a: "Robet Morones",
+    a: "Robert Morones",
     mode: "exact",
   },
   {
@@ -322,7 +322,7 @@ const questions = [
   {
     id: "GrandExecutiveCouncil5",
     q: "Who's the Grand Marshal?",
-    a: "Keyannah Halloway",
+    a: "Keyannah Holloway",
     mode: "exact",
   },
   {
@@ -334,7 +334,7 @@ const questions = [
   {
     id: "GrandExecutiveCouncil7",
     q: "Who's the Grand Outer Guard?",
-    a: "Jean-Mare Cassier",
+    a: "Jean-Marc Cassier",
     mode: "exact",
   },
   {
