@@ -341,7 +341,7 @@ const questions = [
     id: "GrandExecutiveCouncil8",
     q: "Who's the National Delegate?",
     a: "Kaitlynn Rahn | Keegan Dykstra",
-    mode: "contains",
+    mode: "multi",
   },
   {
     id: "GrandExecutiveCouncil9",
