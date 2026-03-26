@@ -398,7 +398,7 @@ const questions = [
   {
     id: "Chapters1",
     q: "1st Chapter in SW Region: (alphabet, university, city if applicable)",
-    a: "Chi, Univeristy of Arizona",
+    a: "Chi, Universty of Arizona",
     mode: "exact",
   },
   {
