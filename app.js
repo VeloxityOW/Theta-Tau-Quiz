@@ -467,6 +467,45 @@ const questions = [
     a: "Iota Zeta, California Polytechnic State University",
     mode: "exact",
   },
+    //10 Requirements
+  {
+    id: "Requirement1",
+    q: "Look at PDF for Material. It's too hard to implement it here.",
+    a: "N/A",
+    mode: "contains",
+  },
+  //4 Financial Obligations
+  {
+    id: "Financial1",
+    q: "Name one of the 4 Financial Obligations of Members:",
+    a: "Initiation and Badge Fee | Housing Fee | Semester Dues | Liability Insurance",
+    mode: "multi",
+  },
+  {
+    id: "Financial2",
+    q: "Name one of the 3 remaining Financial Obligations:",
+    a: "Initiation and Badge Fee | Housing Fee | Semester Dues | Liability Insurance",
+    mode: "multi",
+  },
+  {
+    id: "Financial3",
+    q: "Name one of the 2 remaining Financial Obligations:",
+    a: "Initiation and Badge Fee | Housing Fee | Semester Dues | Liability Insurance",
+    mode: "multi",
+  },
+  {
+    id: "Financial4",
+    q: "Name the last Financial Obligation:",
+    a: "Initiation and Badge Fee | Housing Fee | Semester Dues | Liability Insurance",
+    mode: "multi",
+  },
+  // Official Magazine
+  {
+    id: "Magazine",
+    q: "What is the Official Magazine of Theta Tau?",
+    a: "The Gear",
+    mode: "exact",
+  },
   
 
   // Add more: { id:"x", q:"Question", a:"Answer", mode:"exact" }
