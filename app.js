@@ -608,6 +608,156 @@ var questions = [
     a: "The Gear",
     mode: "exact",
   },
+  {
+    id: "MemberBadge1",
+    q: "What colors are on the Member Badge? (Enter: \"Color, Color\")",
+    a: "Dark Red, Gold",
+    mode: "contains",
+  },
+  {
+    id: "MemberBadge2",
+    q: "How many teeth are on the Member Badge? (Enter: \"Number\")",
+    a: "24",
+    mode: "exact",
+  },
+  {
+    id: "MemberBadge3",
+    q: "How many teeth are on the Member Badge? (Enter: \"Number\")",
+    a: "24",
+    mode: "exact",
+  },
+  {
+    id: "MemberBadge3",
+    q: "There are two objects in the center. What object is on the left?",
+    a: "tongs",
+    mode: "contains",
+  },
+  {
+    id: "MemberBadge4",
+    q: "What is the object is on the right?",
+    a: "hammer",
+    mode: "contains",
+  },
+  {
+    id: "MemberBadge5",
+    q: "Is the object on the right \"over\"/\"under\" the object on the left?",
+    a: "over",
+    mode: "contains",
+  },
+  {
+    id: "MemberBadge6",
+    q: "What greek letters are on the top half?",
+    a: "Theta Tau",
+    mode: "contains",
+  },
+  {
+    id: "MemberBadge7",
+    q: "What color are the greek letters on the top half?",
+    a: "Gold",
+    mode: "contains",
+  },
+  {
+    id: "MemberBadge8",
+    q: "What is in the center?",
+    a: "Dark Red Garnet",
+    mode: "contains",
+  },
+  {
+    id: "MemberBadge9",
+    q: "How many pearls are on the member badge? (Enter: \"Number\")",
+    a: "12",
+    mode: "contains",
+  },
+  {
+    id: "MemberBadge10",
+    q: "What are the pearl patterns on the member badge? (Start on the top and go clockwise) (Enter: \"Number Number Number Number\")",
+    a: "7 2 2 1",
+    mode: "contains",
+  },
+  {
+    id: "CompetingFraternitiesSororities1",
+    q: "1st Competing Fraternity/Sorority: (Greek Letters)",
+    a: "Alpha Omega Epsilon",
+    mode: "exact",
+  },
+  {
+    id: "CompetingFraternitiesSororities2",
+    q: "2nd Competing Fraternity/Sorority: (Greek Letters)",
+    a: "Alpha Rho Chi",
+    mode: "exact",
+  },
+  {
+    id: "CompetingFraternitiesSororities3",
+    q: "3rd Competing Fraternity/Sorority: (Greek Letters)",
+    a: "Kappa Eta Kappa",
+    mode: "exact",
+  },
+  {
+    id: "CompetingFraternitiesSororities4",
+    q: "4th Competing Fraternity/Sorority: (Greek Letters)",
+    a: "Phi Sigma Rho",
+    mode: "exact",
+  },
+  {
+    id: "CompetingFraternitiesSororities5",
+    q: "5th Competing Fraternity/Sorority: (Greek Letters)",
+    a: "Sigma Phi Delta",
+    mode: "exact",
+  },
+  {
+    id: "CompetingFraternitiesSororities6",
+    q: "6th Competing Fraternity/Sorority: (Greek Letters)",
+    a: "Sigma Rho",
+    mode: "exact",
+  },
+  {
+    id: "CompetingFraternitiesSororities7",
+    q: "7th Competing Fraternity/Sorority: (Greek Letters)",
+    a: "Kappa Theta Pi",
+    mode: "exact",
+  },
+  {
+    id: "CompetingFraternitiesSororities8",
+    q: "8th Competing Fraternity/Sorority:",
+    a: "Triangle",
+    mode: "exact",
+  },
+  {
+    id: "DeltaGammaSigDates1",
+    q: "What is the colony creation date? (Month Day, Year)",
+    a: "October 23, 1993",
+    mode: "exact",
+  },
+  {
+    id: "DeltaGammaSigDates2",
+    q: "What is the name of the colony?",
+    a: "Theta Tau Delta",
+    mode: "exact",
+  },
+  {
+    id: "DeltaGammaSigDates3",
+    q: "What is the chapter initiation date? (Month Day, Year)",
+    a: "May 6, 1995",
+    mode: "exact",
+  },
+  {
+    id: "ThetaTauSigDates1",
+    q: "When did the chapter desegregate? (Year)",
+    a: "1958",
+    mode: "exact",
+  },
+  {
+    id: "ThetaTauSigDates2",
+    q: "When did the chapter become co-ed? (Year)",
+    a: "1977",
+    mode: "exact",
+  },
+  {
+    id: "ThetaTauSigDates3",
+    q: "When did the chapter get it's first computer? (Year)",
+    a: "1983",
+    mode: "exact",
+  },
 ];
 
 /* ===== CATEGORIES ===== */
@@ -637,6 +787,11 @@ function assignCat(q) {
   if (id === "Regions" || id === "RD") return "Regions";
   if (id.indexOf("Chapters") === 0) return "SW Chapters";
   if (id.indexOf("Financial") === 0) return "Financial";
+  if (id.indexOf("MemberBadge") === 0) return "Member Badge";
+  if (id.indexOf("CompetingFraternitiesSororities") === 0) return "Competing Fraternities / Sororities";
+  if (id.indexOf("DeltaGammaSigDates") === 0) return "Delta Gamma Significant Dates";
+  if (id.indexOf("ThetaTauSigDates") === 0) return "Theta Tau Significant Dates";
+
   return "Other";
 }
 questions.forEach(function (q) {
