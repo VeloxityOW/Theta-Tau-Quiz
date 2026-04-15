@@ -489,13 +489,13 @@ var questions = [
     mode: "contains",
   },
   {
-    id: "Regions",
+    id: "Regions1",
     q: "Name all 10 Regions (region, region, etc.)",
     a: "Atlantic, Central, Great Lakes, Gulf, Midwest, Mid-Atlantic, Northeast, Northwest, Southeast, Southwest",
     mode: "contains",
   },
   {
-    id: "RD",
+    id: "Regions2",
     q: "Who are the regional directors? (Name, Name)",
     a: "Jasdeep Shangari, Saul Manzano",
     mode: "contains",
@@ -574,36 +574,36 @@ var questions = [
   },
   {
     id: "Requirement1",
-    q: "Look at PDF for Material. It's too hard to implement it here.",
+    q: "Look at PDF for Requirements. It's too hard to implement it here.",
     a: "N/A",
     mode: "contains",
   },
   {
-    id: "Financial1",
+    id: "Requirement2",
     q: "Name one of the 4 Financial Obligations of Members:",
     a: "Initiation and Badge Fee | Housing Fee | Semester Dues | Liability Insurance",
     mode: "multi",
   },
   {
-    id: "Financial2",
+    id: "Requirement3",
     q: "Name one of the 3 remaining Financial Obligations:",
     a: "Initiation and Badge Fee | Housing Fee | Semester Dues | Liability Insurance",
     mode: "multi",
   },
   {
-    id: "Financial3",
+    id: "Requirement4",
     q: "Name one of the 2 remaining Financial Obligations:",
     a: "Initiation and Badge Fee | Housing Fee | Semester Dues | Liability Insurance",
     mode: "multi",
   },
   {
-    id: "Financial4",
+    id: "Requirement5",
     q: "Name the last Financial Obligation:",
     a: "Initiation and Badge Fee | Housing Fee | Semester Dues | Liability Insurance",
     mode: "multi",
   },
   {
-    id: "Magazine",
+    id: "Other",
     q: "What is the Official Magazine of Theta Tau?",
     a: "The Gear",
     mode: "exact",
@@ -616,12 +616,6 @@ var questions = [
   },
   {
     id: "MemberBadge2",
-    q: "How many teeth are on the Member Badge? (Enter: \"Number\")",
-    a: "24",
-    mode: "exact",
-  },
-  {
-    id: "MemberBadge3",
     q: "How many teeth are on the Member Badge? (Enter: \"Number\")",
     a: "24",
     mode: "exact",
@@ -791,6 +785,7 @@ function assignCat(q) {
   if (id.indexOf("CompetingFraternitiesSororities") === 0) return "Competing Fraternities / Sororities";
   if (id.indexOf("DeltaGammaSigDates") === 0) return "Delta Gamma Significant Dates";
   if (id.indexOf("ThetaTauSigDates") === 0) return "Theta Tau Significant Dates";
+  if (id.indexOf("Requirement") === 0) return "Requirements of Theta Tau";
 
   return "Other";
 }
