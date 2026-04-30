@@ -1,6 +1,7 @@
 ## Credits
-Created by **Bhanu Kesavareddy**  
-With contributions from **Ethan Nguyen**
+- Created by **Bhanu Kesavareddy**  
+- Major contributions from **ChatGPT**
+- Minor contributions from **Ethan Nguyen**
 
 # Theta Tau PNM Study Guide
 
@@ -28,9 +29,5 @@ This study guide is designed to closely match the material that PNMs are expecte
 ### Login Page
 ![Login Page](https://github.com/user-attachments/assets/9ab71a86-d7a0-4cfe-bd28-d1c459e8a8e0)
 
-### Main Page
-![Main Page](https://github.com/user-attachments/assets/13c00b6c-2920-4b92-ac69-af81f32eeb87)
-
-## Credits
-Created by **Bhanu Kesavareddy**  
-With contributions from **Ethan Nguyen**
+### Main Page 
+![Main Page](https://github.com/user-attachments/assets/b6d3cf6a-be1d-49ce-b299-33df59f227f9)
