@@ -1,6 +1,7 @@
 ## Credits
 Created by **Bhanu Kesavareddy**  
 Major contributions from **ChatGPT**
+
 Minor contributions from **Ethan Nguyen**
 
 # Theta Tau PNM Study Guide
