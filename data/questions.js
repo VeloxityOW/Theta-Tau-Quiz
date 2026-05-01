@@ -580,7 +580,7 @@ window.THETA_QUESTIONS = [
   },
     {
     id: "Chapters13",
-    q: "12th Chapter in SW Region: (alphabet, university, city if applicable)",
+    q: "13th Chapter in SW Region: (alphabet, university, city if applicable)",
     a: "Iota Zeta, California Polytechnic State University",
     mode: "contains",
   },
