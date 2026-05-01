@@ -310,8 +310,8 @@
     el.view.innerHTML = `
       <section class="hero-card">
         <p class="eyebrow">Welcome back</p>
-        <h2>Study smarter. Cram cleaner.</h2>
-        <p>This version keeps the fun password gate but focuses on the real goal: faster studying, better review, smoother mobile use, and progress that feels like a game.</p>
+        <h2>Theta Tau Quiz Material</h2>
+        <p>This version focuses on better review, smoother mobile use, and progress that feels like a game.</p>
         <div class="hero-actions">
           <button class="primary-btn" data-action="start-mode" data-mode="flashcards" type="button">Start Flashcards</button>
           <button class="secondary-btn" data-action="start-mode" data-mode="review" type="button">Review Weak Cards</button>
